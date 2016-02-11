@@ -11,7 +11,7 @@ zdHost = 'amandeepmidha'
 articleId = 214891008
 
 
-zdUrl = 'https://'+zdHost+'.zendesk.com/api/v2/help_center/en-us/articles/'+str(articleId)+'.json'
+zdUrl = 'https://'+str(zdHost)+'.zendesk.com/api/v2/help_center/en-us/articles/'+str(articleId)+'.json'
 response = requests.get(zdUrl, data={})
 articleJson = response.json()
 
